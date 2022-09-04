@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "development-repo"
+version = "0.1.0"
+description = ""
+authors = ["tantiboro ouattara <tantiboro@hotmail.com>"]
+readme = "README.md"
+packages = [{include = "development_repo"}]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+openai = "^0.23.0"
+
+[tool.poetry.group.dev.dependencies]
+autopep8 = "^1.7.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
